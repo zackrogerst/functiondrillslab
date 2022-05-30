@@ -279,6 +279,16 @@ printAllNames(namesArr);
 
 //CODE HERE
 
+function thatsOdd(aNum) {
+  if (aNum % 2 === 0) {
+    return "That's not Odd!";
+  } else {
+    return "That is odd indeed!";
+  }
+}
+
+let oddChecker = thatsOdd(56);
+// console.log(oddChecker);
 
 ////////////////// PROBLEM 14 ////////////////////
 
