@@ -14,10 +14,11 @@
 //CODE HERE
 
 function helloWorld() {
-  console.log("Hello, World!");
+  return "Hello, World!";
 }
 
 helloWorld();
+// console.log(helloWorld())
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -27,9 +28,10 @@ helloWorld();
 
 //CODE HERE
 
-let jsNinja = () => { "I am a JavaScript ninja!", console.log("I am a JavaScript ninja!") };
+let jsNinja = () => "I am a JavaScript ninja!";
 
 jsNinja();
+// console.log(jsNinja())
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -42,10 +44,11 @@ jsNinja();
 
 
 function printName(personName) {
-  console.log(personName);
+  return personName;
 }
 
 printName("Cameron");
+// console.log(printName("Cameron"));
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -60,10 +63,11 @@ printName("Cameron");
 //CODE HERE
 
 function greeting(name) {
-  console.log(`Hello, ${name}`);
+  return `Hello, ${name}`;
 }
 
 greeting("Jake");
+// console.log(greeting("Jake"));
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -87,12 +91,13 @@ greeting("Jake");
 
 //alternative option using array
 let compareNums = numsArr => {
-  console.log(Math.max(...numsArr));
   return Math.max(...numsArr);
 }
 
 let numsArr = [1, 5, 3, 6, 7, 8, 33, -3];
+
 compareNums(numsArr);
+// console.log(compareNums(numsArr));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -112,7 +117,7 @@ function add(value1, value2) {
 
 let sum = add("2nd", "5th");
 
-console.log(sum);
+// console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -127,8 +132,7 @@ const exclaim = function (str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
-
+console.log('expression')
 
 
 ////////////////// PROBLEM 8 ////////////////////
@@ -142,7 +146,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -153,6 +157,10 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+let exclaimThree = str => `${str.toUpperCase()}!!!`;
+
+exclaimThree("aloha");
+// console.log(exclaimThree("aloha"));
 
 
 ////////////////// PROBLEM 9 ////////////////////
