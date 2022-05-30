@@ -27,7 +27,7 @@ helloWorld();
 
 //CODE HERE
 
-let jsNinja = () => {"I am a JavaScript ninja!", console.log("I am a JavaScript ninja!")};
+let jsNinja = () => { "I am a JavaScript ninja!", console.log("I am a JavaScript ninja!") };
 
 jsNinja();
 
@@ -59,6 +59,11 @@ printName("Cameron");
 
 //CODE HERE
 
+function greeting(name) {
+  console.log(`Hello, ${name}`);
+}
+
+greeting("Jake");
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -73,6 +78,21 @@ printName("Cameron");
 
 //CODE HERE
 
+// let compareNums = (num1, num2, num3) => {
+//   console.log(Math.max(num1, num2, num3));
+//   return Math.max(num1, num2, num3);
+// }
+
+// compareNums(6, 2, 8);
+
+//alternative option using array
+let compareNums = numsArr => {
+  console.log(Math.max(...numsArr));
+  return Math.max(...numsArr);
+}
+
+let numsArr = [1, 5, 3, 6, 7, 8, 33, -3];
+compareNums(numsArr);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
