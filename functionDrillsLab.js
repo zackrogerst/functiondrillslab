@@ -41,6 +41,12 @@ jsNinja();
 //CODE HERE
 
 
+function printName(personName) {
+  console.log(personName);
+}
+
+printName("Cameron");
+
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
