@@ -104,6 +104,15 @@ compareNums(numsArr);
 
 //CODE HERE
 
+function add(value1, value2) {
+  let value1Num = parseInt(value1);
+  let value2Num = parseInt(value2);
+  return value1Num + value2Num;
+}
+
+let sum = add("2nd", "5th");
+
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
