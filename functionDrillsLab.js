@@ -216,6 +216,40 @@ let nameGreeting = nameCheck("Zack");
 
 //CODE HERE
 
+// function faveColorFinder(color) {
+//   if (color === "red") {
+//     return `${color} is a great color.`;
+//   } else if (color === "green") {
+//     return `${color} is a solid favorite color.`;
+//   } else if (color === "black") {
+//     return "so trendy.";
+//   } else {
+//     return "you need to aevaluate your favorite color choice";
+//   }
+// }
+
+// colorRating = faveColorFinder("blue");
+// // console.log(colorRating);
+
+//// alternative solution
+function faveColorFinder(color) {
+  switch (color) {
+    case "red":
+      return `${color} is a great color.`;
+      break;
+    case "green":
+      return `${color} is a solid favorite color.`;
+      break;
+    case "black":
+      return "so trendy.";
+      break;
+    default:
+      return "you need to aevaluate your favorite color choice";
+  }
+}
+colorRating = faveColorFinder("blue");
+// console.log(colorRating);
+
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
