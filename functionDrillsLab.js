@@ -190,6 +190,19 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function nameCheck(name) {
+  if (name === "Steven") {
+    return `What's Up ${name}!`;
+  } else if (name === "Bryan") {
+    return `Hey ${name}!`;
+  } else {
+    return `Cool name, ${name}.`;
+  }
+}
+
+let nameGreeting = nameCheck("Zack");
+
+// console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
