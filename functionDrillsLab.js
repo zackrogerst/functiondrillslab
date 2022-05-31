@@ -175,7 +175,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -267,7 +267,7 @@ function printAllNames(namesArr) {
   }
 }
 
-printAllNames(namesArr);
+// printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -304,7 +304,7 @@ let oddChecker = thatsOdd(56);
 
 let bestMovie = movie => { return `${movie} is the best movie ever!` };
 
-console.log(bestMovie("Shrek"));
+// console.log(bestMovie("Shrek"));
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107]
@@ -369,7 +369,7 @@ function makeUppercase(str) {
   console.log(str.toUpperCase());
 }
 
-makeUppercase(sampleString);
+// makeUppercase(sampleString);
 
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -403,12 +403,30 @@ let emailHandler = emailCheck(email);
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
-  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
+  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. 
+  Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. 
+  Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
 //CODE HERE
 
+function buyFrogs(wallet) {
+  let goldValue = 1;
+  let frogValue = goldValue * 3;
+  let frogCount = 0;
+  let myExpendable = wallet;
+  for (let i = 0; i < wallet; i++) {
+    if (myExpendable >= frogValue) {
+      myExpendable -= frogValue;
+      frogCount++;
+    }
+  }
+  console.log(`You purchased this many frogs: ${frogCount} - Remaining Gold in Wallet: ${myExpendable}`);
+  return `You purchased this many frogs: ${frogCount} - Remaining Gold in Wallet: ${myExpendable}`;
+}
+
+buyFrogs(34);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
