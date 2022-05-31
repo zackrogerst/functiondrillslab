@@ -385,19 +385,19 @@ makeUppercase(sampleString);
 
 //CODE HERE
 
-function emailCheck(myEmail) {
-  let newEmail = myEmail.trim();
-  // console.log(newEmail);
-  if (newEmail.includes("@") === true){
-    return "Email Verified";
+function emailCheck(email) {
+  email = String(email).trim();
+  // console.log(email);
+  if (email.includes('@')) {
+    return 'email verified';
   } else {
-    return "Must Provide a Valid Email Address";
+    return 'must provide a valid email address';
   }
 }
 
-let myEmail = "     test@devmountaindotcom   "
+let email = "     test@devmountaindotcom   "
 
-let emailHandler = emailCheck(myEmail);
+let emailHandler = emailCheck(email);
 // console.log(emailHandler);
 
 
