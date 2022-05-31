@@ -454,38 +454,40 @@ let totalFrogs2 = frogPurchaser2(100)
 // console.log(totalFrogs2);
 
 ////////////////// PROBLEM 21 ////////////////////
-let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
+let sampleArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];   // ascending
 
-let sampleArray2 = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+let sampleArray2 = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];  // decending
+
+let sampleArray3 = [21, 1, 2567, 52, 63455, 74, 8]; // invalid
 
 /*
   Write a function that takes in an array of numbers as an argument. 
   In the body of the function, write logic to determine if the array is in ascending order. 
   The function should return true, if it is sorted in ascending order, false if it is not. 
-  Create a variable, `arrayIsAscending` and set it equal to your function invoked. 
-  Use the sample array to test this function.
+  Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
 //CODE HERE
 
-function checkOrder(arr) {
 
-  let firstValueInArr = arr[0];
-  let lastValueInArr = arr[arr.length - 1];
 
-  for (let i = 1; i < arr.length - 1; i++) {
-    if (firstValueInArr === Math.min(...arr) && lastValueInArr === Math.max(...arr)) {
-      return `${arr} is ascending`;
-    } else if (firstValueInArr === Math.max(...arr) && lastValueInArr === Math.min(...arr)) {
-      return `${arr} is descending`;
+function checkAscend(arr) {
+  let myBool = null;
+  for (let i = 0; i < arr.length - 1; i++) {
+    let myCompare = arr[i + 1];
+    if (arr[i] > myCompare) {
+      myBool = false;
+      return myBool;
+    } else if (arr[i] <= myCompare) {
+      myBool = true;
     } else {
-      return `${arr} not in order or cannot be checked`;
+      myBool = "Invalid Array";
     }
   }
+  return myBool;
 }
 
-let checkMyOrder = checkOrder(sampleArray)
-// console.log(checkMyOrder);
+console.log(checkAscend(sampleArray3));
 
 ////////////////// PROBLEM 22 ////////////////////
 
