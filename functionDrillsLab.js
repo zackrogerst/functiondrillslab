@@ -332,7 +332,6 @@ function bigOrSmall(arr) {
 }
 
 let arrayEvaluator = bigOrSmall(bigOrSmallArray);
-
 // console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -354,7 +353,8 @@ function theEliminator(contestants, loser) {
   return contestants;
 }
 
-console.log(theEliminator(contestants, loser));
+let updatedContestants = theEliminator(contestants, loser);
+// console.log(updatedContestants);
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -364,6 +364,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+
+function makeUppercase(str) {
+  console.log(str.toUpperCase());
+}
+
+makeUppercase(sampleString);
 
 
 ////////////////// PROBLEM 18 ////////////////////
